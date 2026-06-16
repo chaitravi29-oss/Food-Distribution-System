@@ -1,0 +1,6 @@
+db.ref("FoodBox").on("value", (snap) => {
+  let data = snap.val();
+
+  console.log(data.foodLevel);
+  document.getElementById("level").innerText = data.foodLevel;
+});
